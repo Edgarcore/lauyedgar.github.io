@@ -1,58 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6); background-color: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #000000; min-height: 19.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: rgba(255, 255, 255, 0.5); background-color: #000000}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #eb102f; -webkit-text-stroke: #eb102f; background-color: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #2781c9; -webkit-text-stroke: 0px #2781c9}
-    span.s3 {font-kerning: none; color: #d41466; -webkit-text-stroke: 0px #d41466}
-    span.s4 {font-kerning: none; color: #14986a; -webkit-text-stroke: 0px #14986a}
-    span.s5 {font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s6 {font-kerning: none; color: #eb102f; -webkit-text-stroke: 0px #eb102f}
-    span.s7 {font-kerning: none; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: 0px rgba(255, 255, 255, 0.5)}
-    span.s8 {font-kerning: none; color: #e2830e; -webkit-text-stroke: 0px #e2830e}
-  </style>
+  <title>Contador de Tiempo</title>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s1">&lt;html&gt;</span></p>
-<p class="p2"><span class="s1">&lt;head&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Contador de Tiempo&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1 </span><span class="s3">id</span><span class="s1">=</span><span class="s4">"contador"</span><span class="s1">&gt;Cargando contador...&lt;/h1&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">// Función para actualizar el contador en la página web</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">function</span><span class="s5"> </span><span class="s1">actualizarContador</span><span class="s5">() {</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s5"> fechaInicio = </span><span class="s2">new</span><span class="s5"> </span><span class="s6">Date</span><span class="s5">(</span><span class="s4">"May 9, 2022 00:00:00"</span><span class="s5">); </span><span class="s1">// Fecha de inicio de la relación</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> ahora = </span><span class="s2">new</span><span class="s1"> </span><span class="s6">Date</span><span class="s1">();</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> diferencia = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">((ahora - fechaInicio) / </span><span class="s3">1000</span><span class="s1">); </span><span class="s7">// Diferencia en segundos</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> segundos = diferencia % </span><span class="s3">60</span><span class="s1">;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> minutos = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">((diferencia / </span><span class="s3">60</span><span class="s1">) % </span><span class="s3">60</span><span class="s1">);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> horas = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">((diferencia / (</span><span class="s3">60</span><span class="s1"> * </span><span class="s3">60</span><span class="s1">)) % </span><span class="s3">24</span><span class="s1">);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> dias = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">(diferencia / (</span><span class="s3">60</span><span class="s1"> * </span><span class="s3">60</span><span class="s1"> * </span><span class="s3">24</span><span class="s1">));</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> meses = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">(dias / </span><span class="s3">30.4375</span><span class="s1">);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> años = </span><span class="s6">Math</span><span class="s1">.</span><span class="s6">floor</span><span class="s1">(meses / </span><span class="s3">12</span><span class="s1">);</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">var</span><span class="s1"> contador = </span><span class="s4">"Llevamos juntos: "</span><span class="s1"> + años + </span><span class="s4">" años, "</span><span class="s1"> + (meses % </span><span class="s3">12</span><span class="s1">) + </span><span class="s4">" meses, "</span><span class="s1"> + (dias % </span><span class="s3">30.4375</span><span class="s1">) + </span><span class="s4">" días, "</span><span class="s1"> + horas + </span><span class="s4">" horas, "</span><span class="s1"> + minutos + </span><span class="s4">" minutos, "</span><span class="s1"> + segundos + </span><span class="s4">" segundos."</span><span class="s1">;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s3">document</span><span class="s1">.</span><span class="s6">getElementById</span><span class="s1">(</span><span class="s4">"contador"</span><span class="s1">).textContent = contador;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">// Actualizar el contador cada segundo</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s8">setInterval</span><span class="s1">(actualizarContador, </span><span class="s3">1000</span><span class="s1">);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/html&gt;</span></p>
+  <h1 id="contador">Cargando contador...</h1>
+ 
+  <script>
+    function actualizarContador() {
+      var fechaInicio = new Date("May 9, 2022 00:00:00"); // Fecha de inicio de la relación
+      var ahora = new Date();
+      var diferencia = Math.floor((ahora - fechaInicio) / 1000); // Diferencia en segundos
+ 
+      var segundos = diferencia % 60;
+      var minutos = Math.floor((diferencia / 60) % 60);
+      var horas = Math.floor((diferencia / (60 * 60)) % 24);
+      var dias = Math.floor(diferencia / (60 * 60 * 24));
+      var meses = Math.floor(dias / 30.4375);
+      var años = Math.floor(meses / 12);
+ 
+      var contador = "Llevamos juntos: " + años + " años, " + (meses % 12) + " meses, " + (dias % 30.4375) + " días, " + horas + " horas, " + minutos + " minutos, " + segundos + " segundos.";
+      document.getElementById("contador").textContent = contador;
+    }
+ 
+    setInterval(actualizarContador, 1000);
+  </script>
 </body>
 </html>
